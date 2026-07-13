@@ -26,6 +26,15 @@ Day 1's infrastructure, rebuilt as a **fully parameterized, environment-aware co
 
 Applied for real (1× t3.micro + SG in `us-west-2`, default VPC), verified outputs, then `terraform destroy` — state list empty, account clean.
 
+## Screenshots
+
+| Step | Proof |
+|---|---|
+| Required variable — plan prompts for `project_name` | [01-plan-prompt-required-var.png](./screenshots/01-plan-prompt-required-var.png) |
+| `-var` CLI flag overriding both tfvars files | [02-precedence-cli-override.png](./screenshots/02-precedence-cli-override.png) |
+| Apply complete + all outputs printed | [03-apply-outputs.png](./screenshots/03-apply-outputs.png) |
+| `terraform output` / `-json` queries | [04-terraform-output.png](./screenshots/04-terraform-output.png) |
+
 ## Run it
 
 ```bash
